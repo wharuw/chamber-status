@@ -48,7 +48,7 @@
     <div class="level">원활</div>
     <div class="time">
       건수 변경 시각 2026-10-06 15:35<br>
-      마지막 확인 시각 2026-10-06 17:00
+      마지막 확인 시각 2026-10-06 17:04
     </div>
     <div class="warn" id="warn">
       3시간 이상 확인되지 않았습니다. 숫자가 최신이 아닐 수 있습니다.
@@ -85,7 +85,7 @@
       document.getElementById("installBtn").onclick = function () { e.prompt(); };
     });
   })();
-  var checked = new Date("2026-10-06T17:00:02.053386+09:00");
+  var checked = new Date("2026-10-06T17:04:50.163958+09:00");
   if ((Date.now() - checked.getTime()) > 3 * 3600 * 1000) {
     document.getElementById("warn").style.display = "block";
   }
