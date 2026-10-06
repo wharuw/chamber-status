@@ -11,7 +11,7 @@
          background: #f5f6f8; color: #1f2a44; }
   .card { background: #fff; padding: 40px 56px; border-radius: 16px; text-align: center;
           box-shadow: 0 2px 12px rgba(0,0,0,.08); }
-  .logo { display: block; width: 150px; max-width: 60%; height: auto; margin: 0 auto 22px; }
+  .logo { display: block; width: 90px; height: auto; margin: -16px 0 14px -32px; }
   .label { font-size: 18px; color: #667; }
   .num { font-size: 72px; font-weight: 700; margin: 8px 0; color: #1b7f3b; }
   .level-title { font-size: 14px; color: #667; margin-top: 18px; }
@@ -36,8 +36,8 @@
     <div class="level-title">시험성적서 발급 처리 수준</div>
     <div class="level">원활</div>
     <div class="time">
-      건수 변경 시각 2026-10-06 15:28<br>
-      마지막 확인 시각 2026-10-06 15:28
+      건수 변경 시각 2026-10-06 15:31<br>
+      마지막 확인 시각 2026-10-06 15:31
     </div>
     <div class="warn" id="warn">
       3시간 이상 확인되지 않았습니다. 숫자가 최신이 아닐 수 있습니다.
@@ -53,7 +53,7 @@
     </div>
   </div>
 <script>
-  var checked = new Date("2026-10-06T15:28:58.581718+09:00");
+  var checked = new Date("2026-10-06T15:31:58.857837+09:00");
   if ((Date.now() - checked.getTime()) > 3 * 3600 * 1000) {
     document.getElementById("warn").style.display = "block";
   }
