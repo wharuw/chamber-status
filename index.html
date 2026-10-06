@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>챔버 접수 현황</title>
+<title>소형챔버(친환경 시험) 대기시료</title>
 <style>
   body { font-family: -apple-system, "Malgun Gothic", sans-serif; display: flex;
          align-items: center; justify-content: center; min-height: 100vh; margin: 0;
@@ -17,26 +17,41 @@
   .level { display: inline-block; margin: 6px 0 18px; padding: 8px 24px; border-radius: 999px;
            font-size: 22px; font-weight: 700; color: #1b7f3b; background: #e6f4ea; }
   .time { font-size: 13px; color: #889; line-height: 1.7; }
+  .foot { margin-top: 22px; padding-top: 14px; border-top: 1px solid #e3e6ec; }
+  .foot-title { font-size: 12px; color: #889; margin-bottom: 6px; }
+  .foot table { margin: 0 auto; border-collapse: collapse; font-size: 13px; color: #556; }
+  .foot td { padding: 4px 14px; text-align: left; }
+  .foot tr.cur td { font-weight: 700; color: #1f2a44; background: #f0f2f6; }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; }
   .warn { display: none; margin-top: 14px; padding: 8px 12px; border-radius: 8px;
           background: #fdecea; color: #b3261e; font-size: 13px; }
 </style>
 </head>
 <body>
   <div class="card">
-    <div class="label">챔버 접수 현황 · 대기시료</div>
+    <div class="label">소형챔버(친환경 시험) 대기시료</div>
     <div class="num">17건</div>
     <div class="level-title">시험성적서 발급 처리 수준</div>
     <div class="level">원활</div>
     <div class="time">
-      건수 변경 시각 2026-10-06 15:19<br>
-      마지막 확인 시각 2026-10-06 15:19
+      건수 변경 시각 2026-10-06 15:25<br>
+      마지막 확인 시각 2026-10-06 15:25
     </div>
     <div class="warn" id="warn">
       3시간 이상 확인되지 않았습니다. 숫자가 최신이 아닐 수 있습니다.
     </div>
+    <div class="foot">
+      <div class="foot-title">※ 시험성적서 발급 처리 수준 기준 (대기시료 건수)</div>
+      <table>
+        <tr class="cur"><td><span class="dot" style="background:#1b7f3b"></span>원활</td><td>22건 이하</td></tr>
+        <tr><td><span class="dot" style="background:#1a5fb4"></span>정상</td><td>23~44건</td></tr>
+        <tr><td><span class="dot" style="background:#b25e00"></span>다소 지연</td><td>45~69건</td></tr>
+        <tr><td><span class="dot" style="background:#b3261e"></span>상당한 지연</td><td>70건 이상</td></tr>
+      </table>
+    </div>
   </div>
 <script>
-  var checked = new Date("2026-10-06T15:19:22.502071+09:00");
+  var checked = new Date("2026-10-06T15:25:00.997214+09:00");
   if ((Date.now() - checked.getTime()) > 3 * 3600 * 1000) {
     document.getElementById("warn").style.display = "block";
   }
