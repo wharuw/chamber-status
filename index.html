@@ -54,14 +54,14 @@
     
     <div class="eta">
       <div class="level-title">지금 접수 시 성적서 발급 예상</div>
-      <div class="eta-date">10/26(월)경</div>
-      <div class="eta-days">약 <b id="etaDays" data-eta="2026-10-26">18</b>일 소요</div>
-      <div class="eta-ref">10/12 투입 배치(2채널) 기준</div>
+      <div class="eta-date">10/27(화)경</div>
+      <div class="eta-days">약 <b id="etaDays" data-eta="2026-10-27">19</b>일 소요</div>
+      <div class="eta-ref">10/15 투입 배치(1채널) 기준</div>
       <div class="eta-ref">최근 60일 실적: 접수→발급 약 37일</div>
     </div>
     <div class="time">
       건수 변경 시각 2026-10-07 08:41<br>
-      마지막 확인 시각 2026-10-08 08:43
+      마지막 확인 시각 2026-10-08 12:28
     </div>
     <div class="warn" id="warn">
       3시간 이상 확인되지 않았습니다. 숫자가 최신이 아닐 수 있습니다.
@@ -107,7 +107,7 @@
     var today = Date.UTC(k.getUTCFullYear(), k.getUTCMonth(), k.getUTCDate());
     el.textContent = Math.max(0, Math.round((eta - today) / 86400000));
   })();
-  var checked = new Date("2026-10-08T08:43:55.434000+09:00");
+  var checked = new Date("2026-10-08T12:28:21.367612+09:00");
   if ((Date.now() - checked.getTime()) > 3 * 3600 * 1000) {
     document.getElementById("warn").style.display = "block";
   }
