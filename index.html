@@ -61,7 +61,7 @@
     </div>
     <div class="time">
       건수 변경 시각 2026-11-09 15:21<br>
-      마지막 확인 시각 2026-11-12 08:46
+      마지막 확인 시각 2026-11-12 09:51
     </div>
     <div class="warn" id="warn">
       3시간 이상 확인되지 않았습니다. 숫자가 최신이 아닐 수 있습니다.
@@ -107,7 +107,7 @@
     var today = Date.UTC(k.getUTCFullYear(), k.getUTCMonth(), k.getUTCDate());
     el.textContent = Math.max(0, Math.round((eta - today) / 86400000));
   })();
-  var checked = new Date("2026-11-12T08:46:17.209090+09:00");
+  var checked = new Date("2026-11-12T09:51:22.276683+09:00");
   if ((Date.now() - checked.getTime()) > 3 * 3600 * 1000) {
     document.getElementById("warn").style.display = "block";
   }
